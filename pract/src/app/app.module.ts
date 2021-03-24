@@ -9,6 +9,7 @@ import { LuckynumberComponent } from './luckynumber/luckynumber.component';
 import { SimpleformComponent } from './simpleform/simpleform.component';
 import { LoginComponent } from './login/login.component';
 import { CalComponent } from './cal/cal.component';
+import { NewfileComponent } from './newfile/newfile.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { CalComponent } from './cal/cal.component';
     LuckynumberComponent,
     SimpleformComponent,
     LoginComponent,
-    CalComponent
+    CalComponent,
+    NewfileComponent
   ],
   imports: [
     BrowserModule,
