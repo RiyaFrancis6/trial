@@ -1,0 +1,18 @@
+<form (ngSubmit) = "process1()">
+    Enter pnrno: <input type="number" name="pnrNo" [(ngModel)] = pnrNo />
+    <button type ="submit">Generate pnrno</button>
+   </form>
+   
+   <div *ngIf="msg">
+Current status of PNR{{msg.pnrNo}} <br />
+Train no :{{msg.trainNo}} <br />
+Travel Date :{{msg.travelDate}} <br />
+
+<div *ngFor ="let p of msg.passengers">
+    Name :{{p.name}} <br />
+    Gender : {{p.gender}} <br />
+   Status : {{p.status}}  <br />
+
+
+</div>
+   </div>
